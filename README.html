@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Military Defense Contractor</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional, for styling -->
+  <script src="resumeUpload.js" defer></script> <!-- Include JavaScript file -->
+
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('spaceheader.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0; /* Prevent default margin */
+    }
+
+    .hero {
+      background-image: url('technology.png');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .hero .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+
+    .hero h1, .hero p {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    section {
+      background: rgba(0, 0, 0, 0.5);
+      margin: 10px 5%; /* Adjust to be relative to window size */
+      color: #fff;
+      font-size: 18px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 22px;
+    }
+
+    ul {
+      list-style: disc;
+      color: #fff;
+      margin: 20px;
+      font-size: 18px;
+    }
+
+    .contact form, .contact-info {
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: red;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .hero h1, .hero p {
+        font-size: 20px; /* Adjust font size for smaller screens */
+      }
+
+      section {
+        font-size: 16px; /* Adjust section content font size */
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Military Defense Contractor</h1>
+      <p>Strengthening Nations, Securing Futures</p>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>We are the best military defense contractor out there!</p>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="contact">
+    <form id="resume-form">
+      <label for="resume-upload">Come work for us:</label>
+      <input type="file" id="resume-upload" name="resume-upload">
+      <button type="button" id="upload-btn">Upload</button>
+      <p id="feedback"></p>
+    </form>
+
+    <div class="contact-info">
+      <p>Address: 123 Defense St, Secure City</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: contact@defensecontractor.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Military Defense Contractor</p>
+  </footer>
+</body>
+</html>
